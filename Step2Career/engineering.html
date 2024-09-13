@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Specializations | Step 2 Career</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        header .logo img {
+            width: 50px;
+            height: auto;
+            margin-right: 15px;
+        }
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+        nav {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-color: #e67e22;
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .hero h2 {
+            margin: 0 0 10px 0;
+            font-size: 2.5em;
+        }
+        .hero p {
+            margin: 0 0 20px 0;
+            font-size: 1.2em;
+        }
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+            flex: 1;
+        }
+        .content h3 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 60px; /* Added space for footer */
+        }
+        .card {
+            background-color: #ecf0f1;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 45%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+        }
+        .card h4 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        .card a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            background-color: #3498db; /* Highlight color */
+            color: #fff;
+        }
+        .card:hover h4,
+        .card:hover p,
+        .card:hover a {
+            color: #fff; /* Text color on hover */
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+            }
+            nav ul.showing {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="path/to/your/logo.jpg" alt="Step 2 Career Logo">
+        </div>
+        <h1>Step 2 Career</h1>
+        <div class="menu-toggle">
+            <span>☰</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Career Paths</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Engineering Specializations</h2>
+        <p>Explore various specializations within Engineering to enhance your career prospects.</p>
+    </section>
+
+    <section class="content">
+        <h3>Specializations</h3>
+        <div class="card-container">
+            <div class="card">
+                <h4>FullStack Development</h4>
+                <p>Master the skills needed for front-end and back-end development.</p>
+                <a href="fullstack.html">Explore Courses</a>
+            </div>
+            <div class="card">
+                <h4>Cybersecurity</h4>
+                <p>Learn how to protect systems, networks, and data from cyber threats.</p>
+                <a href="cybersecurity.html">Explore Courses</a>
+            </div>
+            <div class="card">
+                <h4>Electronic Engineering</h4>
+                <p>Dive into circuits, signals, and electronic devices.</p>
+                <a href="electronic.html">Explore Courses</a>
+            </div>
+            <div class="card">
+                <h4>CAD (Computer-Aided Design)</h4>
+                <p>Get skilled in software used for designing and drafting.</p>
+                <a href="cad.html">Explore Courses</a>
+            </div>
+            <div class="card">
+                <h4>Civil Engineering</h4>
+                <p>Learn about the planning, design, and construction of infrastructure.</p>
+                <a href="civil.html">Explore Courses</a>
+            </div>
+            <div class="card">
+                <h4>Cloud Computing</h4>
+                <p>Understand cloud architecture, deployment models, and services.</p>
+                <a href="cloud_computing.html">Explore Courses</a>
+            </div>
+            <div class="card">
+                <h4>Internet of Things (IoT)</h4>
+                <p>Discover the interconnected world of devices and data.</p>
+                <a href="iot.html">Explore Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Step 2 Career. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const nav = document.querySelector('nav ul');
+            const menuToggle = document.querySelector('.menu-toggle');
+
+            menuToggle.addEventListener('click', function() {
+                nav.classList.toggle('showing');
+            });
+        });
+    </script>
+</body>
+</html>

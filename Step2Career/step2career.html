@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 2 Career</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        header .logo img {
+            width: 50px;
+            height: auto;
+            margin-right: 15px;
+        }
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+            text-align: center;
+        }
+        header nav {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        header nav ul li {
+            margin-left: 20px;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-color: #95a5a6;
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .hero h2 {
+            margin: 0 0 10px 0;
+            font-size: 2.5em;
+        }
+        .hero p {
+            margin: 0 0 20px 0;
+            font-size: 1.2em;
+        }
+        .cta-button {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background-color: #c0392b;
+        }
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .content h3 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: #ecf0f1;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card h4 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        .card a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hover effect */
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .card:hover h4,
+        .card:hover p,
+        .card:hover a {
+            color: #fff;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            header nav ul {
+                display: none;
+                flex-direction: column;
+            }
+            header nav ul.showing {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="path/to/your/logo.jpg" alt="Step 2 Career Logo">
+        </div>
+        <h1>Step 2 Career</h1>
+        <div class="menu-toggle">
+            <span>☰</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Career Paths</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Your Path to a Bright Future in Diverse Fields</h2>
+        <p>Explore career options, resources, and guidance to help you succeed.</p>
+        <a href="#" class="cta-button">Get Started</a>
+    </section>
+
+    <section class="content">
+        <h3>Available Courses</h3>
+        <div class="card-container">
+            <div class="card">
+                <h4>Engineering</h4>
+                <p>Explore fields like Mechanical, Electrical, Civil, and more.</p>
+                <a href="engineering.html">Learn More</a>
+            </div>
+            <div class="card">
+                <h4>Biotechnology</h4>
+                <p>Discover the latest in biotech, including genetic engineering.</p>
+                <a href="biotechnology.html">Learn More</a>
+            </div>
+            <div class="card">
+                <h4>Data Science</h4>
+                <p>Analyze and interpret complex data to make informed decisions.</p>
+                <a href="data-science.html">Learn More</a>
+            </div>
+            <div class="card">
+                <h4>Literature</h4>
+                <p>Study classic and contemporary works, literary theory, and criticism.</p>
+                <a href="literature.html">Learn More</a>
+            </div>
+            <div class="card">
+                <h4>History</h4>
+                <p>Explore world history, historical events, and cultural heritage.</p>
+                <a href="history.html">Learn More</a>
+            </div>
+            <div class="card">
+                <h4>Fine Arts</h4>
+                <p>Delve into painting, sculpture, music, and performing arts.</p>
+                <a href="fine-arts.html">Learn More</a>
+            </div>
+            <div class="card">
+                <h4>Philosophy</h4>
+                <p>Engage with ethical dilemmas, logic, and metaphysical questions.</p>
+                <a href="philosophy.html">Learn More</a>
+            </div>
+            <div class="card">
+                <h4>Business Administration</h4>
+                <p>Learn management principles, marketing, and organizational behavior.</p>
+                <a href="business-administration.html">Learn More</a>
+            </div>
+            <div class="card">
+                <h4>Accounting</h4>
+                <p>Master financial accounting, auditing, and tax principles.</p>
+                <a href="accounting.html">Learn More</a>
+            </div>
+            <div class="card">
+                <h4>Economics</h4>
+                <p>Study economic theories, microeconomics, and macroeconomics.</p>
+                <a href="economics.html">Learn More</a>
+            </div>
+            <div class="card">
+                <h4>Finance</h4>
+                <p>Understand investment strategies, financial markets, and risk management.</p>
+                <a href="finance.html">Learn More</a>
+            </div>
+            <div class="card">
+                <h4>Law</h4>
+                <p>Learn about legal systems, criminal law, corporate law, and more.</p>
+                <a href="law.html">Learn More</a>
+            </div>
+            <div class="card">
+                <h4>International Relations</h4>
+                <p>Explore diplomacy, global issues, and international law.</p>
+                <a href="international-relations.html">Learn More</a>
+            </div>
+            <div class="card">
+                <h4>Political Science</h4>
+                <p>Study political theories, government structures, and public policy.</p>
+                <a href="political-science.html">Learn More</a>
+            </div>
+            <div class="card">
+                <h4>Criminology</h4>
+                <p>Understand criminal behavior, law enforcement, and justice systems.</p>
+                <a href="criminology.html">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Step 2 Career. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const nav = document.querySelector('nav ul');
+            const menuToggle = document.querySelector('.menu-toggle');
+
+            menuToggle.addEventListener('click', function() {
+                nav.classList.toggle('showing');
+            });
+        });
+    </script>
+</body>
+</html>
