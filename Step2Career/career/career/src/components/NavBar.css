@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SUSE:wght@100..800&display=swap');
+
+*{
+    font-family:"Poppins", sans-serif;
+}
+
+.bg-color{
+    background-color: rgb(69, 65, 71);
+}
+
+.navbar-brand {
+    color: rgb(243 236 236) !important;
+}
+
+/* Navbar Brand (Logo Text) */
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #e7f3fe ; 
+  }
+  
+  /* Navbar Links */
+  .nav-link {
+    font-size: 1rem;
+    color: #eaf2fa !important; 
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Light blue on hover */
+  }
+  
+  /* Button Text (SignUp / Login) */
+  .navbar .nav-link[variant="primary"] {
+    font-size: 1rem;
+    color: #007bff; /* Primary blue for the button */
+    font-weight: bold;
+  }
+  
+  .navbar .nav-link[variant="primary"]:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .navbar-brand img{
+    width: 70px;
+    height:55px;
+  }

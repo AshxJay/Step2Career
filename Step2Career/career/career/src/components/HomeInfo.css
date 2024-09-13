@@ -1,0 +1,33 @@
+.home-info {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+.text-section{
+  padding:70px;
+}
+.text-section p{
+  padding:50px 30px 0px 30px;
+  line-height: 30px;
+  font-size: large;
+}
+
+.text-section h1{
+  text-align: center;
+  color:rgb(12, 106, 49);
+}
+
+.button {
+  text-align: center;
+}
+.image-section {
+  padding:20px 50px;
+}
+.image-section img{
+  width:530px;
+  height:420px;
+}
+
+.join{
+  background-color: #e0e7ec  ;
+}
